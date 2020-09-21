@@ -3,26 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/hubFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/hubFragment"
         android:name="com.example.android_task_32.HubFragment"
-        android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_hub">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/newPortalFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/newPortalFragment"
         android:name="com.example.android_task_32.NewPortalFragment"
-        android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_new_portal">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/hubFragment" />
     </fragment>
 </navigation>

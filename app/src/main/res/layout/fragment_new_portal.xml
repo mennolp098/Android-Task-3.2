@@ -6,22 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".NewPortalFragment">
 
-    <Button
-        android:id="@+id/button_second"
+    <EditText
+        android:id="@+id/etxt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/previous"
+        android:ems="10"
+        android:hint="@string/title_hint"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textview_second"
+    <EditText
+        android:id="@+id/etxt_url"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/button_second"
+        android:ems="10"
+        android:hint="@string/url_hint"
+        android:inputType="textUri|textPersonName"
+        android:text="@string/url_start_help"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_portal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/etxt_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_add_portal"
+        android:layout_width="336dp"
+        android:layout_height="41dp"
+        android:text="@string/add_portal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989" />
 </androidx.constraintlayout.widget.ConstraintLayout>
