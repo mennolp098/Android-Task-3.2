@@ -13,11 +13,6 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/newPortalFragment" />
-        <argument
-            android:name="portal"
-            app:argType="Portal"
-            android:defaultValue="@null"
-            />
     </fragment>
     <fragment
         android:id="@+id/newPortalFragment"

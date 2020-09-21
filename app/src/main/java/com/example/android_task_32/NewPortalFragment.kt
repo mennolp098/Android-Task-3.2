@@ -42,6 +42,7 @@ class NewPortalFragment : Fragment() {
             return
         }
 
+
         val portal = Portal(title, url)
         val bundle = bundleOf("portal" to portal)
         findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment, bundle)
