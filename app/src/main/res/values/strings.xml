@@ -5,5 +5,6 @@
     <string name="url_hint">Url</string>
     <string name="url_start_help">http://</string>
     <string name="add_portal">Add portal</string>
+    <string name="empty_field">Can\'t save portal field is empty or incorrect</string>
 
 </resources>
